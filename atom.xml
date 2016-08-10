@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>小王的日語教室</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://kenny1982tw.github.io/"/>
+  <updated>2016-08-10T13:21:29.000Z</updated>
+  <id>https://kenny1982tw.github.io/</id>
+  
+  <author>
+    <name>小王</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>最愛和牛篇</title>
+    <link href="https://kenny1982tw.github.io/2016/08/10/japanese-beef/"/>
+    <id>https://kenny1982tw.github.io/2016/08/10/japanese-beef/</id>
+    <published>2016-08-10T13:01:21.000Z</published>
+    <updated>2016-08-10T13:21:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/DPlayer.min.js"> </script><p>在朋友之間，我是個嗜吃牛肉出名的～舉凡日本家庭餐廳的牛排（圖一），牛肉漢堡（圖二），生牛肉（圖三），燒烤（圖四），牛舌（圖五），燉牛筋（圖六）等等，都是我的「大好物」。一般日本家庭餐廳的牛排都是有ソース（醬）的，牛肉漢堡普遍也都不錯吃，還有的組合可以同時享受牛排跟牛肉漢堡。<br>但對於我這饕客而言，在日本要吃好吃的牛肉還是要去燒烤店啦！日本很多牛肉燒烤專門店把牛肉的部位分得很細，那種入口即化的感覺，真的是唇齒留香。現在我每次到日本還是都會去燒肉店報到！生牛肉是真的完全沒煎過的，只有撒上芝麻加了ソース（醬）對於愛吃生食的人是可以嚐嚐鮮，生牛肉在高級一點的居酒屋也吃得到，燉牛筋是我去居酒屋必吃的料理，一般都還滿好吃的，如果這間店的燉牛筋不好吃，我就不會再去第二次了（燉牛筋是指標）。仙台的牛舌應該很多人都知道，圖片上的就是一般你去仙台吃牛舌的厚度，我去仙台兩次幾乎天天都在吃牛舌跟枝豆（毛豆），好吃到我會買真空保裝回家自己弄來吃。越打肚子越餓＠＠這次就先介紹到這裡，下次再繼續吧！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;script src=&quot;/assets/js/DPlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;在朋友之間，我是個嗜吃牛肉出名的～舉凡日本家庭餐廳的牛排（圖一），牛肉漢堡（圖二），生牛肉（圖三），燒烤（圖四），牛舌（圖五），燉牛筋（圖六）等等，都是我的「大好物」。一般日
+    
+    </summary>
+    
+    
+      <category term="和牛" scheme="https://kenny1982tw.github.io/tags/%E5%92%8C%E7%89%9B/"/>
+    
+  </entry>
+  
+</feed>
