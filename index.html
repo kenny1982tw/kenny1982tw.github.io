@@ -212,7 +212,7 @@
             </div>
             
                 <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>今天要講的是基礎日語，很多人學日文是為了觀光希望去日本自助旅行的時候能夠溝通，老實說，如果你是要問多少錢（<span class="voice-jp">いくらですか</span>）、問地鐵在哪（<span class="voice-jp">最寄りの地下鉄はどこですか</span>）、點餐（<span class="voice-jp">ＡセットとBセットをください</span>）這其實「大家的日本語」第一本加上我的講義，補充的單字就很足夠。每週上ㄧ次課，大概只需要花費半年的時間。<br>
+                    <p>今天要講的是基礎日語，很多人學日文是為了觀光希望去日本自助旅行的時候能夠溝通，老實說，如果你是要問多少錢（<span class="voice-jp" style="cursor:pointer"><span style="border-bottom:2px dotted">いくらですか</span><img src="/assets/images/speaker.png" style="width:18px;height:18px;display:inline"/></span>）、問地鐵在哪（<span class="voice-jp" style="cursor:pointer"><span style="border-bottom:2px dotted">最寄りの地下鉄はどこですか</span><img src="/assets/images/speaker.png" style="width:18px;height:18px;display:inline"/></span>）、點餐（<span class="voice-jp" style="cursor:pointer"><span style="border-bottom:2px dotted">ＡセットとBセットをください</span><img src="/assets/images/speaker.png" style="width:18px;height:18px;display:inline"/></span>）這其實「大家的日本語」第一本加上我的講義，補充的單字就很足夠。每週上ㄧ次課，大概只需要花費半年的時間。<br>
                     
                         <a href="/2016/08/16/basic-japanese/" class="postShorten-excerpt_link link">
                             繼續閱讀
@@ -249,7 +249,7 @@
             </div>
             
                 <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>在朋友之間，我是個嗜吃牛肉出名的～舉凡日本家庭餐廳的牛排(<span class="voice-jp">牛ステーキ</span>)（圖一），牛肉漢堡(<span class="voice-jp">牛ハンバーグ</span>)（圖二），生牛肉(<span class="voice-jp">生牛肉</span>)（圖三），燒烤(<span class="voice-jp">焼肉</span>)（圖四），牛舌(<span class="voice-jp">牛タン</span>)（圖五），燉牛筋(<span class="voice-jp">牛すし</span>)（圖六）等等，都是我的「大好物」。一般日本家庭餐廳的牛排都是有ソース（醬）的，牛肉漢堡普遍也都不錯吃，還有的組合可以同時享受牛排跟牛肉漢堡。<br>
+                    <p>在朋友之間，我是個嗜吃牛肉出名的～舉凡日本家庭餐廳的牛排(<span class="voice-jp" style="cursor:pointer"><span style="border-bottom:2px dotted">牛ステーキ</span><img src="/assets/images/speaker.png" style="width:18px;height:18px;display:inline"/></span>)（圖一），牛肉漢堡(<span class="voice-jp" style="cursor:pointer"><span style="border-bottom:2px dotted">牛ハンバーグ</span><img src="/assets/images/speaker.png" style="width:18px;height:18px;display:inline"/></span>)（圖二），生牛肉(<span class="voice-jp" style="cursor:pointer"><span style="border-bottom:2px dotted">生牛肉</span><img src="/assets/images/speaker.png" style="width:18px;height:18px;display:inline"/></span>)（圖三），燒烤(<span class="voice-jp" style="cursor:pointer"><span style="border-bottom:2px dotted">焼肉</span><img src="/assets/images/speaker.png" style="width:18px;height:18px;display:inline"/></span>)（圖四），牛舌(<span class="voice-jp" style="cursor:pointer"><span style="border-bottom:2px dotted">牛タン</span><img src="/assets/images/speaker.png" style="width:18px;height:18px;display:inline"/></span>)（圖五），燉牛筋(<span class="voice-jp" style="cursor:pointer"><span style="border-bottom:2px dotted">牛すし</span><img src="/assets/images/speaker.png" style="width:18px;height:18px;display:inline"/></span>)（圖六）等等，都是我的「大好物」。一般日本家庭餐廳的牛排都是有<span class="voice-jp" style="cursor:pointer"><span style="border-bottom:2px dotted">ソース</span><img src="/assets/images/speaker.png" style="width:18px;height:18px;display:inline"/></span>（醬）的，牛肉漢堡普遍也都不錯吃，還有的組合可以同時享受牛排跟牛肉漢堡。<br>
                     
                         <a href="/2016/08/10/japanese-beef/" class="postShorten-excerpt_link link">
                             繼續閱讀
@@ -334,19 +334,8 @@
 <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
 <script>
     $(document).ready(function(){
-        
         var words = $('.voice-jp');
-        words.css('cursor','pointer').each(function(){
-        var voiceImg = $('<img/>').attr('src','/assets/images/speaker.png').css({
-            width:"18px",
-            height:"18px",
-            display:"inline"
-        });
-        var wordSpan = $('<span/>').css("border-bottom","2px dotted");
-
-            var text = $(this).text();
-            $(this).text('').append(wordSpan.text(text)).append(voiceImg);
-        }).click(function(){
+        words.click(function(){
             var text = $(this).find('span').eq(0).text();
             responsiveVoice.speak(text, "Japanese Female", {rate: 0.9});
         });
