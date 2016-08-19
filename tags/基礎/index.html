@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="小王的日語教室">
     <title>標籤: 基礎 - 小王的日語教室</title>
-    <meta name="author" content="小王">
+    <meta name="author" content="小王的日語教室">
     
     
     
@@ -77,7 +77,7 @@
             <a href="/#about">
                     <img class="sidebar-profile-picture" src="/assets/images/Japan.png"/>
             </a>
-            <span class="sidebar-profile-name">小王</span>
+            <span class="sidebar-profile-name">小王的日語教室</span>
         </div>
     
     
@@ -213,7 +213,7 @@
             </div>
             
                 <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>今天要講的是基礎日語，很多人學日文是為了觀光希望去日本自助旅行的時候能夠溝通，老實說，如果你是要問多少錢（いくらですか）、問地鐵在哪（最寄りの地下鉄はどこですか）、點餐（ＡセットとBセットをください）這其實「大家的日本語」第一本加上我的講義，補充的單字就很足夠。每週上ㄧ次課，大概只需要花費半年的時間。<br>
+                    <p>今天要講的是基礎日語，很多人學日文是為了觀光希望去日本自助旅行的時候能夠溝通，老實說，如果你是要問多少錢（<span class="voice-jp">いくらですか</span>）、問地鐵在哪（<span class="voice-jp">最寄りの地下鉄はどこですか</span>）、點餐（<span class="voice-jp">ＡセットとBセットをください</span>）這其實「大家的日本語」第一本加上我的講義，補充的單字就很足夠。每週上ㄧ次課，大概只需要花費半年的時間。<br>
                     
                         <a href="/2016/08/16/basic-japanese/" class="postShorten-excerpt_link link">
                             繼續閱讀
@@ -238,8 +238,15 @@
 
 
                 <footer id="footer" class="main-content-wrap">
+	<div>
+		<a href="http://responsivevoice.org">ResponsiveVoice-NonCommercial</a> 
+		licensed under 
+		<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+		<img title="ResponsiveVoice Text To Speech" src="https://responsivevoice.org/wp-content/uploads/2014/08/95x15.png" alt="95x15" width="95" height="15" />
+		</a>
+	</div>
     <span class="copyrights">
-        Copyrights &copy; 2016 小王. All Rights Reserved.
+        Copyrights &copy; 2016 小王的日語教室. All Rights Reserved.
     </span>
 </footer>
 
@@ -261,7 +268,7 @@
         
             <img id="about-card-picture" src="/assets/images/Japan.png"/>
         
-            <h4 id="about-card-name">小王</h4>
+            <h4 id="about-card-name">小王的日語教室</h4>
         
             <h5 id="about-card-bio"><p>日文老師</p>
 </h5>
@@ -286,5 +293,28 @@
 <!--SCRIPTS END-->
 
 
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+<script>
+    $(document).ready(function(){
+        
+        var words = $('.voice-jp');
+        words.css('cursor','pointer').each(function(){
+        var voiceImg = $('<img/>').attr('src','/assets/images/speaker.png').css({
+            width:"18px",
+            height:"18px",
+            display:"inline"
+        });
+        var wordSpan = $('<span/>').css("border-bottom","2px dotted");
+
+            var text = $(this).text();
+            $(this).text('').append(wordSpan.text(text)).append(voiceImg);
+        }).click(function(){
+            var text = $(this).find('span').eq(0).text();
+            responsiveVoice.speak(text, "Japanese Female", {rate: 0.9});
+        });
+    });
+</script>
 
 </html>
